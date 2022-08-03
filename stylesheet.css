@@ -62,8 +62,20 @@ footer{
     height: 40px;
     background-color: #76BA99;
     padding-top: 60px;
-    align-items: center;        
+    align-items: center; 
+    text-align: center;       
     
 }
 
+h4{
 
+    
+}
+
+div a{
+
+ 
+margin: 20px;
+padding-bottom: 10px;
+
+}
