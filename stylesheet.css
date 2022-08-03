@@ -9,6 +9,7 @@
 body{
 
     font-family: 'Raleway', sans-serif;
+    background-color: #FCF8E8
 }
 
 header{
@@ -49,9 +50,10 @@ header .logo{
 
 
 main{
-
-    height: 500px;
+    padding: 60px;
+    height: 850px;
 }
+
 
 
 
@@ -67,10 +69,7 @@ footer{
     
 }
 
-h4{
 
-    
-}
 
 div a{
 
@@ -79,3 +78,42 @@ margin: 20px;
 padding-bottom: 10px;
 
 }
+
+
+main h4{
+
+margin-bottom: 10px;
+
+}
+
+
+/* table{
+    position: absolute;
+    z-index: 2;
+   left:50%;
+   top: 50%;
+   transform: translate( -50% , -50% );
+   width: 60%;
+   height: 300px;
+   border-radius: 12px 12px 0 0 ;
+   overflow: hidden;
+   border: #51557E;
+   border-collapse: collapse;
+ 
+   
+   
+}
+
+th{
+
+    background-color:#51557E;
+    color: #F9F5EB;
+}
+
+th,td{
+
+    padding: 10px 12px;
+}
+
+tr:nth-child(odd){ 
+    background-color: #fce8fbfd;} */
