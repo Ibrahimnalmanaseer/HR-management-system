@@ -1,4 +1,5 @@
-var employeeIDArr=[];
+
+var id=999;
 
 const salaryscale={
 
@@ -10,12 +11,11 @@ const salaryscale={
 
 
 
-const employeesArr=[
 
 
-{
+const employee_1={
 
-    employeeID: generateID(employeeIDArr,1000),
+    employeeID: 0,
 
     fullName:"Ghazi Samer",
 
@@ -26,15 +26,32 @@ const employeesArr=[
     profileImage:"#",
 
     salary:function(){ 
-        return salaryscale[this.level]
+        let slaryRange=salaryscale[this.level];
+        let randomSalary=(Math.floor(Math.random() * (slaryRange[1] - slaryRange[0] + 1)) + slaryRange[0]);
+        return parseInt(randomSalary*0.925);
+    }
+
+    ,
+
+    uniqueId:function(counter){
+        this.employeeID =counter+1;
+        ++id;
 
     }
 
-},
 
+};
+
+
+employee_1.uniqueId(id);
+
+
+
+
+const employee_2=
 {
 
-    employeeID:generateID(employeeIDArr,1000),
+    employeeID:1,
 
     fullName:"Lana Ali",
 
@@ -45,15 +62,26 @@ const employeesArr=[
     profileImage:"#",
 
     salary:function(){ 
-        return salaryscale[this.level]
+        let slaryRange=salaryscale[this.level];
+        let randomSalary=(Math.floor(Math.random() * (slaryRange[1] - slaryRange[0] + 1)) + slaryRange[0]);
+        return parseInt(randomSalary*0.925);
+
+    },
+    uniqueId:function(counter){
+        this.employeeID =counter+1;
+        ++id;
 
     }
 
-},
+};
+
+employee_2.uniqueId(id);
+
+const employee_3=
 
 {
 
-    employeeID:generateID(employeeIDArr,1000),
+    employeeID:3,
 
     fullName:"Tamara Ayoub",
 
@@ -64,15 +92,26 @@ const employeesArr=[
     profileImage:"#",
 
     salary:function(){ 
-        return salaryscale[this.level]
+        let slaryRange=salaryscale[this.level];
+        let randomSalary=(Math.floor(Math.random() * (slaryRange[1] - slaryRange[0] + 1)) + slaryRange[0]);
+        return parseInt(randomSalary*0.925);
 
     }
+    ,
+    uniqueId:function(counter){
+        this.employeeID =counter+1;
+        ++id;
 
-},
+    }
+    
+};
+employee_3.uniqueId(id);
+
+const employee_4=
 
 {
 
-    employeeID:generateID(employeeIDArr,1000),
+    employeeID:0,
 
     fullName:"Safi Walid",
 
@@ -83,16 +122,26 @@ const employeesArr=[
     profileImage:"#",
 
     salary:function(){ 
-        return salaryscale[this.level]
+        let slaryRange=salaryscale[this.level];
+        let randomSalary=(Math.floor(Math.random() * (slaryRange[1] - slaryRange[0] + 1)) + slaryRange[0]);
+        return parseInt(randomSalary*0.925);
+
+    },
+    uniqueId:function(counter){
+        this.employeeID =counter+1;
+        ++id;
 
     }
 
-},
+};
 
+employee_4.uniqueId(id);
+
+const employee_5=
 
 {
 
-    employeeID:generateID(employeeIDArr,1000),
+    employeeID:0,
 
     fullName:"Omar Zaid",
 
@@ -103,17 +152,27 @@ const employeesArr=[
     profileImage:"#",
 
     salary:function(){ 
-        return salaryscale[this.level]
+           let slaryRange=salaryscale[this.level];
+           let randomSalary=(Math.floor(Math.random() * (slaryRange[1] - slaryRange[0] + 1)) + slaryRange[0]);
+           return parseInt(randomSalary*0.925);
+    },
+    uniqueId:function(counter){
+        this.employeeID =counter+1;
+        ++id;
 
-    }
 
-},
+}
+
+};
 
 
+console.log(employee_5.uniqueId(id))
+
+const employee_6=
 
 {
 
-    employeeID:generateID(employeeIDArr,1000),
+    employeeID:6,
 
     fullName:"Rana Saleh",
 
@@ -124,16 +183,26 @@ const employeesArr=[
     profileImage:"#",
 
     salary:function(){ 
-        return salaryscale[this.level]
+        let slaryRange=salaryscale[this.level];
+        let randomSalary=(Math.floor(Math.random() * (slaryRange[1] - slaryRange[0] + 1)) + slaryRange[0]);
+        return parseInt(randomSalary*0.925);
+    },
+    uniqueId:function(counter){
+        this.employeeID =counter+1;
+        ++id;
 
     }
 
-},
+};
+
+employee_6.uniqueId(id);
+
+const employee_7=
 
 
 {
 
-    employeeID:generateID(employeeIDArr,1000),
+    employeeID:0,
 
     fullName:"Hadi Ahmad",
 
@@ -144,67 +213,56 @@ const employeesArr=[
     profileImage:"#",
 
     salary:function(){ 
-        return salaryscale[this.level]
+        let slaryRange=salaryscale[this.level];
+        let randomSalary=(Math.floor(Math.random() * (slaryRange[1] - slaryRange[0] + 1)) + slaryRange[0]);
+        return parseInt(randomSalary*0.925);
+    }
+    ,
+    uniqueId:function(counter){
+        this.employeeID =counter+1;
+        ++id;
 
     }
 
 }
 
-
-];
-
+employee_7.uniqueId(id);
 
 
 
+console.log(`Employee name: ${employee_1.fullName} `+"\n")
+console.log(`Employee salary: ${employee_1["salary"]()}`)
 
+console.log(`Employee name: ${employee_2.fullName} `+"\n")
+console.log(`Employee salary: ${employee_2["salary"]()}`)
 
+console.log(`Employee name: ${employee_3.fullName} `+"\n")
+console.log(`Employee salary: ${employee_3["salary"]()}`)
 
-function generateID(arr,startNum){
+console.log(`Employee name: ${employee_4.fullName} `+"\n")
+console.log(`Employee salary: ${employee_4["salary"]()}`)
 
-    if (arr.length<1){
-        arr.push(startNum);
-        for (let i=1;i<7;i++){
-            startNum+=1;
-            arr[i]=startNum;
+console.log(`Employee name: ${employee_5.fullName} `+"\n")
+console.log(`Employee salary: ${employee_5["salary"]()}`)
 
+console.log(`Employee name: ${employee_6.fullName} `+"\n")
+console.log(`Employee salary: ${employee_6["salary"]()}`)
 
-        }  
-        return arr.shift();
-        
-    }
-
-    else{
-        return arr.shift();
-
-    }
-    
-}
+console.log(`Employee name: ${employee_7.fullName} `+"\n")
+console.log(`Employee salary: ${employee_7["salary"]()}`)
 
 
 
 
-function salaryCalculation(level){
-    
-    let randomSalary=(Math.floor(Math.random() * (level[1] - level[0] + 1)) + level[0]);
-
-
-
-    return parseFloat(randomSalary*0.925).toFixed(2);
-
-
-};
 
 
 
 
-for (let i=0;i<employeesArr.length;i++){
 
-    console.log(`Employee name: ${employeesArr[i].fullName} `+"\n")
-    console.log(`Employee salary: ${salaryCalculation  (employeesArr[i]["salary"]())}`)
+
     
 
 
-}
 
 
 
