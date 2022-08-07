@@ -87,33 +87,28 @@ margin-bottom: 10px;
 }
 
 
-/* table{
-    position: absolute;
-    z-index: 2;
-   left:50%;
-   top: 50%;
-   transform: translate( -50% , -50% );
-   width: 60%;
-   height: 300px;
-   border-radius: 12px 12px 0 0 ;
-   overflow: hidden;
-   border: #51557E;
-   border-collapse: collapse;
- 
-   
-   
+
+.department{
+font-weight: bold;
+font-size: larger;
+
 }
 
-th{
+div.column{
 
-    background-color:#51557E;
-    color: #F9F5EB;
+    background-color: #71af97 ;
+    color: #FCF8E8;
+    
 }
 
-th,td{
+.salary{
 
-    padding: 10px 12px;
+    margin-top: 10px;
+    
 }
 
-tr:nth-child(odd){ 
-    background-color: #fce8fbfd;} */
+.level{
+
+    font-weight: bold;
+    font-size: medium;
+}
